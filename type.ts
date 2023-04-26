@@ -83,3 +83,44 @@ function occurError(err: string): never {
 function infinite(): never {
   while (true) console.log("무한 루프에 빠짐");
 }
+
+//Type 사용하기
+type numOrStr = string | number;
+let dontKnow: numOrStr = 1;
+
+//ex) 어려운 타입
+type grade = "a" | "b" | "c" | "d" | "f";
+let studentGrade: grade = "a";
+let studentsGradeArr: grade[] = ["a", "f", "c"];
+
+//Interface 사용하기
+interface User {
+  name: string;
+  id: string;
+  age: number;
+  isMember?: boolean;
+  [additional: number]: string;
+}
+
+let jackInfo: User = {
+  name: "김정혁",
+  id: "jack",
+  age: 25,
+  isMember: false,
+};
+
+jackInfo[1] = "a";
+
+let useData: User[] = [
+  {
+    name: "lee",
+    id: "faker",
+    age: 26,
+  },
+  {
+    name: "ryu",
+    id: "keria",
+    age: 20,
+    isMember: false,
+  },
+];

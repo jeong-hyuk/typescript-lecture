@@ -70,3 +70,26 @@ function infinite() {
     while (true)
         console.log("무한 루프에 빠짐");
 }
+var dontKnow = 1;
+var studentGrade = "a";
+var studentsGradeArr = ["a", "f", "c"];
+var jackInfo = {
+    name: "김정혁",
+    id: "jack",
+    age: 25,
+    isMember: false,
+};
+jackInfo[1] = "a";
+var useData = [
+    {
+        name: "lee",
+        id: "faker",
+        age: 26,
+    },
+    {
+        name: "ryu",
+        id: "keria",
+        age: 20,
+        isMember: false,
+    },
+];
