@@ -124,3 +124,20 @@ let useData: User[] = [
     isMember: false,
   },
 ];
+
+//함수에 interface 적용하기
+interface Add {
+  (num1: number, num2: number): number;
+}
+
+//함수 선언문사용 불가능 아래와 같이 함수 표현식만 사용 가능
+const interfaceAdd: Add = (x, y) => {
+  return x + y;
+};
+
+const interfaceAdd2: Add = function (x, y) {
+  return x + y;
+};
+
+const sumResult: number = interfaceAdd(1, 3);
+console.log(sumResult);
