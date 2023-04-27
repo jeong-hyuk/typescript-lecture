@@ -141,3 +141,5 @@ const interfaceAdd2: Add = function (x, y) {
 
 const sumResult: number = interfaceAdd(1, 3);
 console.log(sumResult);
+
+//수정
